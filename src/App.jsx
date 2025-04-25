@@ -14,10 +14,10 @@ export default function App() {
       return toast.error("Preencha todos os campos")
     }
     if (user.length < 8 || user.length > 10 ) {
-       return toast.error("Usuário invaliado")
+       toast.error("Usuário invaliado")
     }
     if (pass.length<8 || pass.length > 10){
-      return toast.error("Senha")
+      return toast.error("Senha invaliado")
     }
 
     // Requisição para backend
